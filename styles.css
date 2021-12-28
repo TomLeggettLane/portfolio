@@ -1,15 +1,24 @@
 body {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     background-color: #222831;
-    position: relative;
+    overflow-x: hidden;
+    
+}
+span {
+    display: inline-block;
 }
 
-img {
+html {
+    scroll-behavior: smooth;
+}
+
+.tom-img {
     width: 230px;
     border-radius: 50%;
     border: 3px solid white;
-    margin: 4% auto 7%;
+    margin: 1% auto 5%;
 }
 
 h1 {
@@ -17,7 +26,7 @@ h1 {
 }
 
 hr {
-    width: 10%;
+    width: 8%;
     margin: 2% auto 4%;
     height: 0px;
     border: none;
@@ -45,7 +54,27 @@ i {
 .home {
     background-color: #393E46;
     text-align: center;
+    padding: 15% 10%;
+}
+
+.home-img {
+    width:200px;
+    position: relative;
+    top:240px;
+}
+
+.home-text {
+    margin-bottom: 1%;
+}
+
+.test {
+    background-color: #393E46;
+    text-align: center;
     padding: 5% 10%;
+    background-image: url('images/circle-spin.gif');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .home {
@@ -145,12 +174,18 @@ i {
 }
 
 .form-control {
+    color: white;
     background-color:#222831;
     border: none;
     border-radius: 0;
     margin: 0 0 2px;
 }
 
+.form-control:focus {
+    color: white;
+    background-color: #222831;;
+    box-shadow: none;
+  }
 
 
 
@@ -208,3 +243,171 @@ i {
 .arrow {
     transition: all 0.5s;
 }
+.slide-in-right {
+    animation: slideInRight 0.75s ease both;
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.slide-in-left {
+    animation: slideInLeft 0.75s ease both;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.popout {
+    animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
+}
+
+@keyframes popout {
+    from{transform:scale(0)}
+    70%{transform:scale(1.1)}
+    85%{transform:scale(0.95)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    70%{-webkit-transform:scale(1.1)}
+    85%{transform:scale(0.95)}
+    to{-webkit-transform:scale(1)}
+}
+
+
+.invis {
+    visibility: hidden;
+}
+
+
+.python-bar {
+    animation: python-fill 2s forwards;
+}
+
+@keyframes python-fill{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 55%;
+    }
+}
+
+.java-bar {
+    animation: java-fill 2s forwards 2s;
+}
+
+@keyframes java-fill{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+.sql-bar {
+    animation: sql-fill 2s forwards 2s;
+}
+
+@keyframes sql-fill{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+.javascript-bar {
+    animation: javascript-fill 2s forwards;
+}
+
+@keyframes javascript-fill{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+.html5-bar {
+    animation: html5-fill 2s forwards;
+}
+
+@keyframes html5-fill{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 35%;
+    }
+}
+
+.css-bar {
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 35%;
+    }
+}
+
+.react-bar {
+    animation: react-fill 2s forwards;
+}
+
+@keyframes react-fill{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 25%;
+    }
+}
+.c-bar {
+    animation: c-fill 2s forwards;
+}
+
+@keyframes c-fill{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 25%;
+    }
+}
+
+.carousel {
+    margin: 0 auto;
+}
+.carousel-inner > .carousel-item > img {
+    width:420px;
+    height:280px;
+  }
+
+  .project {
+      margin: 4% 0;
+  }
