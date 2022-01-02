@@ -5,9 +5,19 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 
 $(function () {
     var isAnimatedScroll = false;
-    $(window).scroll(function () {
-        setupVisibleElementAnimations();
+    var width=$(window).width();
+    console.log(width);
+    if (width > 950){
+        $(window).scroll(function () {
+            setupVisibleElementAnimations();
     });
+    } else {
+        var $els = $(".invis");
+        $els.each(function () {
+            var $el = $(this);
+            $el.removeClass("invis");
+        });
+    }
 
     $(window).on("load");
 
