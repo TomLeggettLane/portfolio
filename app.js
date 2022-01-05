@@ -6,7 +6,6 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 $(function () {
     var isAnimatedScroll = false;
     var width=$(window).width();
-    console.log(width);
     if (width > 950){
         $(window).scroll(function () {
             setupVisibleElementAnimations();
