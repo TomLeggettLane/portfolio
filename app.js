@@ -6,11 +6,24 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 $(function () {
     var isAnimatedScroll = false;
     var width=$(window).width();
-    if (width > 950){
+    if (width > 980){
+
+        //removes progress bar widths for animated scrolling
+        var $els = $(".progress-bar")
+        $els.each(function () {
+            var $el = $(this);
+            $el.removeAttr("style");
+        })
+
+        //sets current elements in viewport visible
+        setupVisibleElementAnimations();
+
+        //sets other elements to become visible on scroll
         $(window).scroll(function () {
             setupVisibleElementAnimations();
     });
     } else {
+        //sets all elements to visible
         var $els = $(".invis");
         $els.each(function () {
             var $el = $(this);
