@@ -46,7 +46,6 @@ i {
     margin: 3% 1%;
 }
 
-
 /* --- HOME --- */
 
 .home {
@@ -131,6 +130,24 @@ i {
     margin: 1% auto 5%;
 }
 
+.hover-img {
+    text-decoration: none;
+    font-weight: bold;
+    color: #00ADB5;
+}
+.hover-img a { 
+    position:relative; 
+}
+.hover-img a span { 
+    position:absolute; 
+    display:none; 
+    z-index:99; 
+}
+
+.hover-img a:hover span {
+    display:block; 
+}
+
 .skills {
     margin: 5% auto;
     padding: 0 1%;
@@ -173,8 +190,11 @@ i {
 }
 
 .carousel-inner > .carousel-item > img {
-    width:420px;
-    height:280px;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    object-fit: cover;
 }
 
 .project {

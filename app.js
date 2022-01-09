@@ -70,3 +70,13 @@ $(function () {
         );
     }
     });
+
+$(function() {
+    $('.hover-img')
+        .mouseover(function(event) {
+            $('#circle-img').attr('src', 'images/' + event.target.id + '.png');
+            })
+        .mouseout(function() {
+            $('#circle-img').attr('src', 'images/Tom.png');
+            });
+})
