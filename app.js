@@ -21,7 +21,7 @@ $(function () {
         //sets other elements to become visible on scroll
         $(window).scroll(function () {
             setupVisibleElementAnimations();
-    });
+        });
     } else {
         //sets all elements to visible
         var $els = $(".invis");
