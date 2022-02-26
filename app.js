@@ -80,3 +80,5 @@ $(function() {
             $('#circle-img').attr('src', 'images/Tom.png');
             });
 })
+
+$('#currentDate').text(new Date().getFullYear().toString());

@@ -61,10 +61,15 @@ i {
 }
 
 .home-text {
-    margin-bottom: 1%;
+    margin-bottom: 2%;
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 1em;
 }
 
 .arrow {
+    position: relative;
+    left:5px;
     transition: all 0.5s;
 }
 
@@ -79,6 +84,9 @@ i {
 
 .home-red {
     color:#E93B81;
+}
+.view-work-button:hover {
+    color: white;   
 }
 
 .view-work-button:hover .arrow {
@@ -134,6 +142,7 @@ i {
     text-decoration: none;
     font-weight: bold;
     color: #00ADB5;
+    cursor: default;
 }
 .hover-img a { 
     position:relative; 
