@@ -77,7 +77,7 @@ $(function() {
             $('#circle-img').attr('src', 'images/' + event.target.id + '.png');
             })
         .mouseout(function() {
-            $('#circle-img').attr('src', 'images/Tom.png');
+            $('#circle-img').attr('src', 'images/tom.png');
             });
 })
 
